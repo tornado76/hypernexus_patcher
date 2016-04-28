@@ -31,3 +31,4 @@ cd system/netd && git pull https://github.com/BenzoRom/system_netd && cd ../..
 
 # Revert commits
 cd libcore && git revert 0e9a29993f2b361 && cd ..
+cd vendor/nexus && git revert 5b2ec4f8292d3eef4bb7789bf6dadf3f9402e297 && cd ../..
