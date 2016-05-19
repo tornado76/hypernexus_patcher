@@ -24,7 +24,7 @@ cd external/chromium-libpac && git pull https://github.com/BenzoRom/external_chr
 cd external/f2fs-tools && git pull https://github.com/BenzoRom/external_f2fs-tools && cd ../..
 cd external/lz4 && git pull https://android.googlesource.com/platform/external/lz4 master && cd ../..
 cd external/lzma && git pull https://android.googlesource.com/platform/external/lzma master && cd ../..
-cd external/skia && git pull https://github.com/BenzoRom/external_skia cd ../..
+cd external/skia && git pull https://github.com/BenzoRom/external_skia && cd ../..
 cd external/sqltie && git pull https://github.com/BenzoRom/external_sqlite && cd ../..
 cd external/v8 && git pull https://github.com/BenzoRom/external_v8 && cd ../..
 cd external/vixl && git pull https://android.googlesource.com/platform/external/vixl master && cd ../..
