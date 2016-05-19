@@ -7,19 +7,19 @@ rm -rf bionic
 rm -rf dalvik
 rm -rf external/chromium-webview
 rm -rf external/proguard
-#rm -rf prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9
+rm -rf prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9
 
-# Clone repos
+# Replace repos
 git clone https://github.com/frap129/hypernexus_art art
 git clone https://github.com/frap129/hypernexus_bionic bionic
 git clone https://github.com/BenzoRom/dalvik dalvik
 git clone https://github.com/BenzoRom/external_chromium-webview external/chromium-webview
 git clone https://android.googlesource.com/platform/external/dlmalloc/ -b master external/dlmalloc
 git clone https://github.com/BenzoRom/external_proguard external/proguard
-#cp -R ~/tmp/arm-linux-androideabi-4.9 prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9
+cp -R ~/tmp/arm-linux-androideabi-4.9 prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9
 
-# Pull updates
-#cd build && git pull https://github.com/frap129/hypernexus_build && cd ..
+# Apply updates
+cd build && git pull https://github.com/frap129/hypernexus_build && cd ..
 cd external/chromium-libpac && git pull https://github.com/BenzoRom/external_chromium-libpac && cd ../..
 cd external/f2fs-tools && git pull https://github.com/BenzoRom/external_f2fs-tools && cd ../..
 cd external/lz4 && git pull https://android.googlesource.com/platform/external/lz4 master && cd ../..
